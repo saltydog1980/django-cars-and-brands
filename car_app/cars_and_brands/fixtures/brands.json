@@ -1,0 +1,92 @@
+[
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 1,
+        "fields": {
+            "name": "Cadillac",
+            "origin_country": "United States",
+            "establishment_date": "1902-08-22"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 2,
+        "fields": {
+            "name": "Toyota",
+            "origin_country": "Japan",
+            "establishment_date": "1937-08-28"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 3,
+        "fields": {
+            "name": "Chevrolet",
+            "origin_country": "United States",
+            "establishment_date": "1911-11-03"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 4,
+        "fields": {
+            "name": "Ford Motor Company",
+            "origin_country": "United States",
+            "establishment_date": "1903-06-16"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 5,
+        "fields": {
+            "name": "Honda",
+            "origin_country": "Japan",
+            "establishment_date": "1948-09-24"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 6,
+        "fields": {
+            "name": "Mercedes",
+            "origin_country": "Germany",
+            "establishment_date": "1926-06-28"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 7,
+        "fields": {
+            "name": "Volkswagen",
+            "origin_country": "Germany",
+            "establishment_date": "1937-05-28"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 8,
+        "fields": {
+            "name": "Hudson",
+            "origin_country": "United States",
+            "establishment_date": "1909-05-25"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 9,
+        "fields": {
+            "name": "Mazda",
+            "origin_country": "Japan",
+            "establishment_date": "1920-01-30"
+        }
+    },
+    {
+        "model": "cars_and_brands.Brand",
+        "pk": 10,
+        "fields": {
+            "name": "Pontiac",
+            "origin_country": "United States",
+            "establishment_date": "1907-01-01"
+        }
+    }
+]

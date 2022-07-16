@@ -1,0 +1,36 @@
+{% extends 'pages/layout.html' %}
+{% load humanize %} 
+    {%block content%}
+    <div class="container pt-4">
+        <ul class="list-group list-group-light list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">{{model.name}}</div>
+            <p><strong>Country of Assembly:</strong></p>
+            {{model.assembled_country}} <br>
+            <p class="pt-3"><strong>Date of Release:</strong></p>
+            {{model.release_date}} <br>
+            <p class="pt-3"><strong>Options:</strong></p>
+            <ol>
+            {%for option in options%}
+                <li>
+                {{option.name}}  Option Price: ${{ option.price|floatformat:"2"|intcomma }}
+                </li>
+            {% endfor %}
+            </ol>
+            <p class="pt-3"><strong>Base Price:</strong></p>
+            ${{model.base_price|floatformat:"2"|intcomma}} <br>
+            <p class="pt-3"><strong>Sticker Price:</strong></p>
+            ${{sticker_price|floatformat:"2"|intcomma}}
+            </div>
+            <a href="{% url 'cars_and_brands:car_update' brand_id=brand_id model_id=model.id%}">
+            <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Edit</button>
+            </a>
+            <a href="{% url 'cars_and_brands:delete' model_id=model.id %}">
+                <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Delete</button>
+            </a>
+        </li>
+        </ul>    
+    </div>
+    {% endblock %}
+

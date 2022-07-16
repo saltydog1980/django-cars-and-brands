@@ -1,0 +1,28 @@
+{% extends 'pages/layout.html' %}
+    {%block content%}
+    <div class="container d-flex justify-content-center">
+        <h3 class="pe-4">Models</h3>
+        <a href="{% url 'cars_and_brands:car_new' brand_id%}">
+        <buttontype="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Add New Model</button>
+        </a>
+        <hr>
+        
+    </div>
+    
+    {%if model_list%}
+    <div class="container pt-4">
+        <ol class="list-group list-group-light list-group-numbered">
+        {%for model in model_list|dictsort:"id"%}
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">{{model.name}}</div>
+            </div>
+            <a href="{% url 'cars_and_brands:car' brand_id=brand_id model_id=model.id %}">
+            <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Details</button>
+            </a>
+        </li>
+        {% endfor %}
+        </ol>    
+    </div>
+    {% endif %}
+    {% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'pages/layout.html' %}
+    {%block content%}
+   <div class="container pt-5">
+        <form>
+            <!-- Name -->
+            <div class="form-outline mb-4">
+            <input type="text" id="car-model-name" class="form-control" value="{{model.name}}"/>
+            <label class="form-label" for="car-model-name">Name</label>
+            </div>
+        
+            <!-- Country -->
+            <div class="form-outline mb-4">
+            <input type="text" id="car-model-country" class="form-control" value="{{model.assembled_country}}"/>
+            <label class="form-label" for="car-model-country">Country of Assembly</label>
+            </div>
+
+            <!-- Date -->
+            <div class="form-outline mb-4">
+                <input type="date" id="car-model-date" class="form-control" value="{{model.release_date|date:'Y-m-d'}}"/>
+                <label class="form-label" for="car-model-date">Date Released</label>
+            </div>
+
+            <!-- Base Price -->
+            <div class="form-outline mb-4">
+                <input type="number" id="car-model-price" class="form-control" value="{{model.base_price}}"/>
+                <label class="form-label" for="car-model-price">Base Price</label>
+            </div>
+
+            <!-- Option radios -->
+            {% for item in options%}
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="{{item.name}}" id="{{item.id}}" value="{{item.id}}"/>
+                <label class="form-check-label" for="{{item.name}}"> {{item.name}} </label>
+            </div>
+            {% endfor %}
+        
+            <!-- Submit button -->
+            <button onclick="updateCar(event)" class="btn btn-primary btn-block mb-4">Submit Model</button>
+        </form>
+    </div>
+    {% endblock %}

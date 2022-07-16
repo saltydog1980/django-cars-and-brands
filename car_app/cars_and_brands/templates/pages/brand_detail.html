@@ -1,0 +1,22 @@
+{% extends 'pages/layout.html' %}
+    {%block content%}
+    <div class="container pt-4">
+        <ul class="list-group list-group-light list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold">{{brand.name}}</div>
+            <p><strong>Country of Origin:</strong></p>
+            {{brand.origin_country}} <br>
+            <p class="pt-3"><strong>Date of Establishment:</strong></p>
+            {{brand.establishment_date}}
+            </div>
+            <a href="{% url 'cars_and_brands:brand_update' brand.id%}">
+            <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Edit</button>
+            </a>
+            <a href="{% url 'cars_and_brands:cars' brand.id%}">
+                <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Models</button>
+            </a>
+        </li>
+        </ul>    
+    </div>
+    {% endblock %}

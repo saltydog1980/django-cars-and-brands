@@ -1,0 +1,162 @@
+[
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 1,
+        "fields": {
+            "name": "Leather Seats",
+            "price": "2000"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 2,
+        "fields": {
+            "name": "Heated Seats",
+            "price": "500"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 3,
+        "fields": {
+            "name": "Third Row Seating",
+            "price": "2000"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 4,
+        "fields": {
+            "name": "Sunroof",
+            "price": "1000"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 5,
+        "fields": {
+            "name": "All Weather Floor Mats",
+            "price": "375"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 6,
+        "fields": {
+            "name": "Navigation System",
+            "price": "400"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 7,
+        "fields": {
+            "name": "Backup Camera",
+            "price": "200"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 8,
+        "fields": {
+            "name": "Blindspot Monitoring",
+            "price": "750"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 9,
+        "fields": {
+            "name": "Bluetooth",
+            "price": "85"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 10,
+        "fields": {
+            "name": "Apple Car Play",
+            "price": "150"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 11,
+        "fields": {
+            "name": "Android Auto",
+            "price": "100"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 12,
+        "fields": {
+            "name": "Entertainment System",
+            "price": "2500"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 13,
+        "fields": {
+            "name": "Onboard Wifi",
+            "price": "575"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 14,
+        "fields": {
+            "name": "Remote Start",
+            "price": "700"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 15,
+        "fields": {
+            "name": "Towing Mirrors",
+            "price": "1500"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 16,
+        "fields": {
+            "name": "Towing Package",
+            "price": "2500"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 17,
+        "fields": {
+            "name": "Sports Package",
+            "price": "2000"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 18,
+        "fields": {
+            "name": "Alloy Wheels",
+            "price": "4000"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 19,
+        "fields": {
+            "name": "Tinted Windows",
+            "price": "1250"
+        }
+    },
+    {
+        "model": "cars_and_brands.Option",
+        "pk": 20,
+        "fields": {
+            "name": "8 Way Power Seats",
+            "price": "1350"
+        }
+    }
+]

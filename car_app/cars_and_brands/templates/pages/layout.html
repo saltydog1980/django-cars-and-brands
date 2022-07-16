@@ -1,0 +1,50 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car DB</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-4" style="background-color: #e3f2fd;">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          
+          <button class="navbar-toggler btn-primary" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredCarDB">
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredCarDB">
+            <a class="navbar-brand" href="#"><strong>CAR DB</strong></a>
+          
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'cars_and_brands:home'%}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'cars_and_brands:brands'%}">Brands</a>
+              </li>
+              <li>
+                <a class="nav-link" href="{% url 'cars_and_brands:brand_new'%}">Add Brand</a>
+              </li>
+            </ul>
+          </div>        
+        </div>
+      </nav>
+      <marquee behavior="" direction=""><H1><strong>You have reached the car db, no thrills, just data...</strong></H1></marquee>
+      {%block content%}
+      {% endblock %}
+</body>
+</html>

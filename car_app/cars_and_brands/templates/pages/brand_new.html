@@ -1,0 +1,27 @@
+{% extends 'pages/layout.html' %}
+    {%block content%}
+   <div class="container pt-5">
+        <form>
+            <!-- Name -->
+            <div class="form-outline mb-4">
+            <input type="text" id="car-brand-name" class="form-control" />
+            <label class="form-label" for="car-brand-name">Name</label>
+            </div>
+        
+            <!-- Country -->
+            <div class="form-outline mb-4">
+            <input type="text" id="car-brand-country" class="form-control" />
+            <label class="form-label" for="car-brand-country">Country of Origin</label>
+            </div>
+
+            <!-- Date -->
+            <div class="form-outline mb-4">
+                <input type="date" id="car-brand-date" class="form-control" />
+                <label class="form-label" for="car-brand-date">Established Date</label>
+            </div>
+        
+            <!-- Submit button -->
+            <button onclick="brandNew(event)" class="btn btn-primary btn-block mb-4">Submit Brand</button>
+        </form>
+    </div>
+    {% endblock %}
